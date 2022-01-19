@@ -15,10 +15,10 @@ public class VendingMachine {
             System.out.println("Not enough money entered.");
         } else {
             double change = inputtedAmount - costPerBeverage;
-            this.money -= change;
             this.money += costPerBeverage;
+            this.money -= change;
             this.numberOfBeverages -= 1;
-            System.out.println("Your change is " + change);
+            System.out.println("Your change is $" + change);
             System.out.println("Enjoy your beverage!");
         }
     }
